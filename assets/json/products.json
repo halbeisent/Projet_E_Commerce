@@ -6,7 +6,7 @@
     "prodCat": "Nike",
     "prodPrice": 75,
     "prodPic": "../images/jordan1jordan1flyknitmen.jpg",
-  }
+  },
   {
     "prodRef": "NK690",
     "prodName": "Nike Air Jordan 1 High Zip",
@@ -14,7 +14,7 @@
     "prodCat": "Nike",
     "prodPrice": 75,
     "prodPic": "../images/jordan1highzip.jpg",
-  }
+  },
   {
     "prodRef": "NK999",
     "prodName": "Nike Air Jordan 1st Class",
@@ -22,7 +22,7 @@
     "prodCat": "Nike",
     "prodPrice": 100,
     "prodPic": "../images/jordanfirstclass.jpg",
-  }
+  },
   {
     "prodRef": "NK605",
     "prodName": "Nike Air Jordan 1 OG",
@@ -30,7 +30,7 @@
     "prodCat": "Nike",
     "prodPrice": 85,
     "prodPic": "../images/jordan1jordan1retrohigh.jpg",
-  }
+  },
   {
     "prodRef": "AD421",
     "prodName": "Adidas Superstar",
@@ -38,7 +38,7 @@
     "prodCat": "Adidas",
     "prodPrice": 65,
     "prodPic": "../images/adidassuperstar.jpg",
-  }
+  },
   {
     "prodRef": "AD214",
     "prodName": "Adidas Pharrell Williams",
@@ -46,7 +46,7 @@
     "prodCat": "Adidas",
     "prodPrice": 70,
     "prodPic": "../images/adidaspharrell.jpg",
-  }
+  },
   {
     "prodRef": "AD138",
     "prodName": "Adidas Stan Smith",
@@ -54,7 +54,7 @@
     "prodCat": "Adidas",
     "prodPrice": 80,
     "prodPic": "../images/adidasstansmith.jpg",
-  }
+  },
   {
     "prodRef": "AD404",
     "prodName": "Adidas Gazelle",
@@ -62,7 +62,7 @@
     "prodCat": "Adidas",
     "prodPrice": 120,
     "prodPic": "../images/adidasgazelle.jpg",
-  }
+  },
   {
     "prodRef": "PM101",
     "prodName": "Puma Tsugi EvoKNIT",
@@ -70,7 +70,7 @@
     "prodCat": "Puma",
     "prodPrice": 110,
     "prodPic": "../images/pumaxnatureltsugievoknit.jpg",
-  }
+  },
   {
     "prodRef": "PM215",
     "prodName": "Puma Suede Femme",
@@ -78,7 +78,7 @@
     "prodCat": "Puma",
     "prodPrice": 115,
     "prodPic": "../images/pumaxnaturelsuedef.jpg",
-  }
+  },
   {
     "prodRef": "PM100",
     "prodName": "Puma Suede Classic",
@@ -86,7 +86,7 @@
     "prodCat": "Puma",
     "prodPrice": 125,
     "prodPic": "../images/pumasuedeclassicbboyfabulous.jpg",
-  }
+  },
   {
     "prodRef": "PM5291",
     "prodName": "Puma Suede Fille",
