@@ -1,3 +1,9 @@
 .card {
   width: 18em;
 }
+
+.flexing {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}

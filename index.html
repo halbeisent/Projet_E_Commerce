@@ -1,24 +1,28 @@
 <!DOCTYPE html>
 <html lang="fr">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous" />
-    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
-    <title>ShoesAddicted</title>
-    <link rel="stylesheet" href="assets/css/style.css" />
-    <script src="assets/js/script.js"></script>
-  </head>
-  <body ng-app="shoesAddicted">
-    <!--Ajout d'une card pour essayer de mettre du ng-repeat dessus-->
-
-      <div class="card">
-        <img class="card-img-top" src="assets/images/adidasgazelle.jpg" alt="imageShoes" />
-        <div class="card-body">
-          <p class="card-text">modele de la chaussure</p>
-        </div>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
+  <title>ShoesAddicted</title>
+  <link rel="stylesheet" href="assets/css/style.css" />
+  <script src="assets/js/script.js"></script>
+</head>
+<body ng-app="shoesApp" ng-controller="shoesCtrl">
+  <!--Ajout d'une card pour essayer de mettre du ng-repeat dessus-->
+  <div class="container-fluid flexing">
+    <div class="card" ng-repeat="model in products">
+      <img class="card-img-top" src="{{model.prodPic}}" alt="{{model.prodName}}" />
+      <div class="card-body">
+        <p class="card-text">{{model.prodName}}</p>
+        <a href="#" data-toggle="popover" title="Description du produit" data-content="{{model.prodDesc}}" data-trigger="hover">Description du produit</a>
       </div>
-
-    <!-- Fin de la card -->
-  </body>
+    </div>
+  </div>
+  <!-- Fin de la card -->
+</body>
 </html>
