@@ -1,5 +1,6 @@
 .card {
   width: 18em;
+  text-align: center;
 }
 
 .flexing {
@@ -10,5 +11,13 @@
 /* icone de la navbar */
 #ShoesAddictedIcon {
   width: 40px;
-  padding-bottom: 25px;
+  padding-bottom: 10px;
+}
+
+.badge {
+  background-color: grey;
+}
+
+.container-fluid {
+  padding-top: 100px;
 }

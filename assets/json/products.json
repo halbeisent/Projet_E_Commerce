@@ -5,7 +5,8 @@
     "prodDesc": "La chaussure Air Jordan 1 Retro High Flyknit pour Homme revisite le légendaire modèle original avec une empeigne Flyknit souple et légère.",
     "prodCat": "Nike",
     "prodPrice": 75,
-    "prodPic": "assets/images/jordan1flyknitmen.jpg"
+    "prodPic": "assets/images/jordan1flyknitmen.jpg",
+    "prodLogo": "assets/images/nike.png"
   },
   {
     "prodRef": "NK690",
@@ -13,7 +14,8 @@
     "prodDesc": "S'inspirant du modèle porté par la star lors de play-offs mythiques, suivant une grave blessure au pied, la chaussure Air Jordan 1 High Zip pour Femme associe des éléments de la Air Jordan I et de la Air Jordan II pour un confort d'exception et un style emblématique.",
     "prodCat": "Nike",
     "prodPrice": 75,
-    "prodPic": "assets/images/jordan1highzip.jpg"
+    "prodPic": "assets/images/jordan1highzip.jpg",
+    "prodLogo": "assets/images/nike.png"
   },
   {
     "prodRef": "NK999",
@@ -21,15 +23,8 @@
     "prodDesc": "La chaussure Air Jordan First Class pour Enfant plus âgé arbore des détails Jordan caractéristiques ainsi qu'une unité Air visible au talon pour un maximum d'amorti et de confort tout au long de la journée.",
     "prodCat": "Nike",
     "prodPrice": 100,
-    "prodPic": "assets/images/jordanfirstclass.jpg"
-  },
-  {
-    "prodRef": "NK605",
-    "prodName": "Nike Air Jordan 1 OG",
-    "prodDesc": "La chaussure Air Jordan 1 Retro High OG arbore un style rétro avec une empeigne en cuir confortable et un amorti performant.",
-    "prodCat": "Nike",
-    "prodPrice": 85,
-    "prodPic": "assets/images/jordan1retrohigh.jpg"
+    "prodPic": "assets/images/jordanfirstclass.jpg",
+    "prodLogo": "assets/images/nike.png"
   },
   {
     "prodRef": "AD421",
@@ -37,31 +32,8 @@
     "prodDesc": "Cette sneaker a fait ses débuts en s'illustrant sur les parquets de basketball des années 70. Très vite, elle a été adoptée par les skateurs, les stars du hip hop et les fans de streetwear. Cette version reste fidèle au look classique avec une tige en cuir enduit. Elle reprend les détails du modèle original tels que les contours en zigzags des 3 bandes et le shell-toe signature.",
     "prodCat": "Adidas",
     "prodPrice": 65,
-    "prodPic": "assets/images/adidassuperstar.jpg"
-  },
-  {
-    "prodRef": "AD214",
-    "prodName": "Adidas Pharrell Williams",
-    "prodDesc": "Que ce soit dans la musique, la mode ou le cinéma, Pharrell Williams repousse les limites du style avec des designs ultra tendance. S'inspirant des archives, il remet au goût du jour d'emblématiques modèles sport adidas. Cette sneaker twiste des chaussures de running et de tennis rétro avec une tige adidas Primeknit ultra légère à chausson intégré. Ornée d'un motif géométrique stylé, sa semelle intermédiaire allie amorti et maintien.",
-    "prodCat": "Adidas",
-    "prodPrice": 70,
-    "prodPic": "assets/images/adidaspharrell.jpg"
-  },
-  {
-    "prodRef": "AD138",
-    "prodName": "Adidas Stan Smith",
-    "prodDesc": "Lancée sur les courts de tennis en 1971, la Stan Smith s'est imposée comme une icône du style street. Confectionnée en cuir premium avec une doublure douce, cette version enfants est rehaussée de détails cousus authentiques. Sa semelle cupsole en caoutchouc est munie d'un insert anti-odeurs matelassé.",
-    "prodCat": "Adidas",
-    "prodPrice": 80,
-    "prodPic": "assets/images/adidasstansmith.jpg"
-  },
-  {
-    "prodRef": "AD404",
-    "prodName": "Adidas Gazelle",
-    "prodDesc": "Avec sa tige basse, la Gazelle était à l'origine une chaussure de sport. Elle est désormais une référence dans le monde du streetwear. Cette version junior est une réédition à l’identique du modèle de 1991. Elle affiche la même conception en suède coloré avec un avant-pied en T.",
-    "prodCat": "Adidas",
-    "prodPrice": 120,
-    "prodPic": "assets/images/adidasgazelle.jpg"
+    "prodPic": "assets/images/adidassuperstar.jpg",
+    "prodLogo": "assets/images/adidas.png"
   },
   {
     "prodRef": "PM101",
@@ -69,7 +41,44 @@
     "prodDesc": "Avec sa matière supérieure en tricot dotée de détails graphiques à l'aspect rayons X et enveloppant étroitement le pied, la TSUGI evoKNIT issue de la collection NATUREL ne manquera pas de séduire tous les amateurs de baskets. Sa conception sans languette permettant un enfilage facile vous donnera l'impression de porter une chaussette et vous fera ainsi profiter d'un confort absolu.",
     "prodCat": "Puma",
     "prodPrice": 110,
-    "prodPic": "assets/images/pumaxnatureltsugievoknit.jpg"
+    "prodPic": "assets/images/pumaxnatureltsugievoknit.jpg",
+    "prodLogo": "assets/images/puma.png"
+  },
+  {
+    "prodRef": "AD214",
+    "prodName": "Adidas Pharrell Williams",
+    "prodDesc": "Que ce soit dans la musique, la mode ou le cinéma, Pharrell Williams repousse les limites du style avec des designs ultra tendance. S'inspirant des archives, il remet au goût du jour d'emblématiques modèles sport adidas. Cette sneaker twiste des chaussures de running et de tennis rétro avec une tige adidas Primeknit ultra légère à chausson intégré. Ornée d'un motif géométrique stylé, sa semelle intermédiaire allie amorti et maintien.",
+    "prodCat": "Adidas",
+    "prodPrice": 70,
+    "prodPic": "assets/images/adidaspharrell.jpg",
+    "prodLogo": "assets/images/adidas.png"
+  },
+  {
+    "prodRef": "AD138",
+    "prodName": "Adidas Stan Smith",
+    "prodDesc": "Lancée sur les courts de tennis en 1971, la Stan Smith s'est imposée comme une icône du style street. Confectionnée en cuir premium avec une doublure douce, cette version enfants est rehaussée de détails cousus authentiques. Sa semelle cupsole en caoutchouc est munie d'un insert anti-odeurs matelassé.",
+    "prodCat": "Adidas",
+    "prodPrice": 80,
+    "prodPic": "assets/images/adidasstansmith.jpg",
+    "prodLogo": "assets/images/adidas.png"
+  },
+  {
+    "prodRef": "AD404",
+    "prodName": "Adidas Gazelle",
+    "prodDesc": "Avec sa tige basse, la Gazelle était à l'origine une chaussure de sport. Elle est désormais une référence dans le monde du streetwear. Cette version junior est une réédition à l’identique du modèle de 1991. Elle affiche la même conception en suède coloré avec un avant-pied en T.",
+    "prodCat": "Adidas",
+    "prodPrice": 120,
+    "prodPic": "assets/images/adidasgazelle.jpg",
+    "prodLogo": "assets/images/adidas.png"
+  },
+  {
+    "prodRef": "NK605",
+    "prodName": "Nike Air Jordan 1 OG",
+    "prodDesc": "La chaussure Air Jordan 1 Retro High OG arbore un style rétro avec une empeigne en cuir confortable et un amorti performant.",
+    "prodCat": "Nike",
+    "prodPrice": 85,
+    "prodPic": "assets/images/jordan1retrohigh.jpg",
+    "prodLogo": "assets/images/nike.png"
   },
   {
     "prodRef": "PM215",
@@ -77,7 +86,8 @@
     "prodDesc": "Cette nouvelle version de notre célèbre basket vous fait profiter de tous les détails classiques de la Suede originale tels que la matière supérieure en cuir velours ou la célèbre semelle étroite en une unité. La bande PUMA et la semelle intermédiaire mouchetées, le gros laçage et la semelle extérieure bleutée particulièrement cool font de cette chaussure à l'aspect rayons X proposée par le néo-cubiste NATUREL un modèle absolument parfait.",
     "prodCat": "Puma",
     "prodPrice": 115,
-    "prodPic": "assets/images/pumaxnaturelsuedef.jpg"
+    "prodPic": "assets/images/pumaxnaturelsuedef.jpg",
+    "prodLogo": "assets/images/puma.png"
   },
   {
     "prodRef": "PM100",
@@ -85,7 +95,8 @@
     "prodDesc": "La PUMA Suede est très certainement la chaussure la plus connue et la plus adorée parmi toutes les chaussures PUMA et est depuis longtemps inscrite dans les chroniques de la basket.",
     "prodCat": "Puma",
     "prodPrice": 125,
-    "prodPic": "assets/images/pumasuedeclassicbboyfabulous.jpg"
+    "prodPic": "assets/images/pumasuedeclassicbboyfabulous.jpg",
+    "prodLogo": "assets/images/puma.png"
   },
   {
     "prodRef": "PM5291",
@@ -93,6 +104,7 @@
     "prodDesc": "La PUMA Suede est très certainement la chaussure la plus connue et la plus adorée parmi toutes les chaussures PUMA et est depuis longtemps inscrite dans les chroniques de la basket.",
     "prodCat": "Puma",
     "prodPrice": 450,
-    "prodPic": "assets/images/pumaxnaturelsuede.jpg"
+    "prodPic": "assets/images/pumaxnaturelsuede.jpg",
+    "prodLogo": "assets/images/puma.png"
   }
 ]
