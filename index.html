@@ -134,12 +134,12 @@
         <span class="badge badge-light"><img src="{{model.prodLogo}}" alt="logo" /></span>
         <img class="card-img-top" src="{{model.prodPic}}" alt="{{model.prodName}}" />
         <div class="card-body">
-          <p class="card-text">{{model.prodName}}</p>
-          <p class="card-text ref">{{model.prodRef}}</p>
-          <a href="#" data-toggle="popover" data-placement="top" title="Description du produit" data-content="{{model.prodDesc}}" data-class="desc" data-trigger="focus">Description du produit</a>
+          <p class="card-text prodName">{{model.prodName}}</p>
           <p>{{model.prodPrice | currency: '€'}}</p>
-          <button ng-click="addItem(model)" type="button" class="btn btn-sm btn-primary" data-toggle="modal" data-target="#exampleModal">
-            Ajouter {{model.qtyCart}} au panier
+          <p class="card-text ref prodRef">Ref: {{model.prodRef}}</p>
+          <a href="#{{model.prodName}}" data-toggle="popover" data-placement="top" title="Description du produit" data-content="{{model.prodDesc}}" data-class="desc" data-trigger="focus">Description du produit</a>
+          <button ng-init="model.qtyCart" ng-click="addItem(model)" type="button" class="btn btn-sm btn-primary" data-toggle="modal" data-target="#exampleModal">
+            Ajouter au panier
           </button>
         </div>
       </div>

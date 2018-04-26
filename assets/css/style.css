@@ -9,6 +9,18 @@ body {
 .badge {
   background-color: grey;
 }
+/*Titre en gras dans les cards*/
+.prodName {
+  font-weight: bold;
+}
+
+.prodRef {
+  font-size: 0.7em;
+}
+
+.btn {
+  margin: 20px;
+}
 
 .container-fluid {
   padding-top: 100px;
