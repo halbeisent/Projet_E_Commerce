@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
   <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular-route.js"></script>
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
@@ -27,7 +28,7 @@
          <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">LA BOUTIQUE</a>
          <div class="dropdown-menu">
            <a class="dropdown-item" id="navAll" href="#shop">Toutes les marques</a>
-           <a class="dropdown-item" id="navAdidas" href="#shop">Adidas</a>
+           <a class="dropdown-item" id="navAdidas" href="#!/{{model.Po}}">Adidas</a>
            <a class="dropdown-item" id="navNike" href="#shop">Nike</a>
            <a class="dropdown-item" id="navPuma" href="#shop">Puma</a>
          </div>
@@ -46,16 +47,7 @@
    </div>
 </nav> <!-- fin de la navbar -->
   <!--Ajout d'une card pour essayer de mettre du ng-repeat dessus-->
-  <div class="container-fluid flexing">
-    <div class="card" ng-repeat="model in products">
-      <span class="badge badge-light"><img src="{{model.prodLogo}}" alt="logo" /></span>
-      <img class="card-img-top" src="{{model.prodPic}}" alt="{{model.prodName}}" />
-      <div class="card-body">
-        <p class="card-text">{{model.prodName}}</p>
-        <a href="#{{model.prodName}}" data-toggle="popover" data-placement="top" title="Description du produit" data-content="{{model.prodDesc}}" data-trigger="focus">Description du produit</a>
-        <p>{{model.prodPrice}}€</p>
-      </div>
-    </div>
+  <div class="container-fluid flexing" ng-view>
   </div>
   <!-- Fin de la card -->
 </body>
