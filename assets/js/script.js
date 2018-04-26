@@ -54,7 +54,7 @@ app.controller('shoesCtrl', ['$scope', '$http', function($scope, $http) {
       var index = $scope.cart.indexOf(model);
       $scope.cart.splice(index, 1);
     };
-    
+
 // fin de gestion CART _________________________________________________________________________________________________________
 
 }]);// fin du controller

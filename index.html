@@ -84,7 +84,7 @@
                         <tr ng-repeat="model in cart">
                           <td class="text-left align-middle">{{model.prodRef}}</td>
                           <td class="text-left align-middle">{{model.prodName}}</td>
-                          <td class="text-right align-middle"><i ng-click="removeItem()" class="far fa-trash-alt trash"></i> <input type="number" ng-model="model.qtyCart" class="qty" min="0" max="99" /></td>
+                          <td class="text-right align-middle"><i ng-click="removeItem(model)" class="far fa-trash-alt trash"></i> <input type="number" ng-model="model.qtyCart" class="qty" min="0" max="99" /></td>
                           <td class="text-right align-middle">{{model.prodPrice | currency : '€'}}</td>
                           <td class="text-right align-middle">{{getCost(model) | currency : '€'}}</td>
                         </tr>
