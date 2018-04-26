@@ -1,5 +1,5 @@
 // Création du module AngularJS shoesAPP
-var app = angular.module('shoesApp', ['ngRoute']);
+var app = angular.module('shoesApp', []);
 // Définition du controleur shoesCtrl
 app.controller('shoesCtrl', ['$scope', '$http', function($scope, $http) {
   $scope.catFilter = '';
@@ -54,10 +54,11 @@ app.controller('shoesCtrl', ['$scope', '$http', function($scope, $http) {
       var index = $scope.cart.indexOf(model);
       $scope.cart.splice(index, 1);
     };
-  // fin de gestion CART _________________________________________________________________________________________________________
+    
+// fin de gestion CART _________________________________________________________________________________________________________
 
 }]);// fin du controller
 
-$(function () {
+$(function (){ // Chargement du script quand le doc est chargé
   $('[data-toggle="popover"]').popover()
 })
