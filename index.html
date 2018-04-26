@@ -48,11 +48,10 @@
   <!--Ajout d'une card pour essayer de mettre du ng-repeat dessus-->
   <div class="container-fluid flexing">
     <div class="card" ng-repeat="model in products">
-      <span class="badge badge-light"><img src="{{model.prodLogo}}" alt="logo" /></span>
       <img class="card-img-top" src="{{model.prodPic}}" alt="{{model.prodName}}" />
       <div class="card-body">
         <p class="card-text">{{model.prodName}}</p>
-        <a href="#" data-toggle="popover" data-placement="top" title="Description du produit" data-content="{{model.prodDesc}}" data-trigger="focus">Description du produit</a>
+        <a href="#{{model.prodName}}" data-toggle="popover" data-placement="top" title="Description du produit" data-content="{{model.prodDesc}}" data-trigger="focus">Description du produit</a>
         <p>{{model.prodPrice}}€</p>
       </div>
     </div>
