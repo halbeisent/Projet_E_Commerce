@@ -1,6 +1,14 @@
+body {
+  font-family: 'Pavanam', sans-serif;
+  margin-left: 20px;
+  margin-right: 20px;
+  background-color: #05121B;
+}
+
 .card {
   width: 18em;
   text-align: center;
+  margin-bottom: 20px;
 }
 
 .flexing {
@@ -8,6 +16,44 @@
   flex-wrap: wrap;
   justify-content: space-around;
 }
+
+.ref {
+  font-style: italic;
+}
+
+.nous {
+  background-color: #05121B;
+  color: #BBB0B4;
+  padding-top: 100px;
+  padding-bottom: 100px;
+  height: 500px;
+}
+
+#shopName{
+  color : #BBB0B4;
+  font-size: 4em;
+  font-weight: bolder;
+}
+
+
+/*Parallax*/
+
+/* The image used */
+.parallax01{
+  background-image: url('../images/bg_footwear.jpg');
+  padding-top: 100px;
+  height: 700px;
+  max-width: 4096px;
+  font-size: 3em;
+  color: white;
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
 /* icone de la navbar */
 #ShoesAddictedIcon {
   width: 40px;

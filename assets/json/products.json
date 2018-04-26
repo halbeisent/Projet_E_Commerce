@@ -6,7 +6,8 @@
     "prodCat": "Nike",
     "prodPrice": 75,
     "prodPic": "assets/images/jordan1flyknitmen.jpg",
-    "prodLogo": "assets/images/nike.png"
+    "prodLogo": "assets/images/nike.png",
+    "qtyCart": 1
   },
   {
     "prodRef": "NK690",
@@ -15,7 +16,8 @@
     "prodCat": "Nike",
     "prodPrice": 75,
     "prodPic": "assets/images/jordan1highzip.jpg",
-    "prodLogo": "assets/images/nike.png"
+    "prodLogo": "assets/images/nike.png",
+    "qtyCart": 1
   },
   {
     "prodRef": "NK999",
@@ -24,7 +26,8 @@
     "prodCat": "Nike",
     "prodPrice": 100,
     "prodPic": "assets/images/jordanfirstclass.jpg",
-    "prodLogo": "assets/images/nike.png"
+    "prodLogo": "assets/images/nike.png",
+    "qtyCart": 1
   },
   {
     "prodRef": "AD421",
@@ -33,7 +36,8 @@
     "prodCat": "Adidas",
     "prodPrice": 65,
     "prodPic": "assets/images/adidassuperstar.jpg",
-    "prodLogo": "assets/images/adidas.png"
+    "prodLogo": "assets/images/adidas.png",
+    "qtyCart": 1
   },
   {
     "prodRef": "PM101",
@@ -42,7 +46,8 @@
     "prodCat": "Puma",
     "prodPrice": 110,
     "prodPic": "assets/images/pumaxnatureltsugievoknit.jpg",
-    "prodLogo": "assets/images/puma.png"
+    "prodLogo": "assets/images/puma.png",
+    "qtyCart": 1
   },
   {
     "prodRef": "AD214",
@@ -51,7 +56,8 @@
     "prodCat": "Adidas",
     "prodPrice": 70,
     "prodPic": "assets/images/adidaspharrell.jpg",
-    "prodLogo": "assets/images/adidas.png"
+    "prodLogo": "assets/images/adidas.png",
+    "qtyCart": 1
   },
   {
     "prodRef": "AD138",
@@ -60,7 +66,8 @@
     "prodCat": "Adidas",
     "prodPrice": 80,
     "prodPic": "assets/images/adidasstansmith.jpg",
-    "prodLogo": "assets/images/adidas.png"
+    "prodLogo": "assets/images/adidas.png",
+    "qtyCart": 1
   },
   {
     "prodRef": "AD404",
@@ -69,7 +76,8 @@
     "prodCat": "Adidas",
     "prodPrice": 120,
     "prodPic": "assets/images/adidasgazelle.jpg",
-    "prodLogo": "assets/images/adidas.png"
+    "prodLogo": "assets/images/adidas.png",
+    "qtyCart": 1
   },
   {
     "prodRef": "NK605",
@@ -78,7 +86,8 @@
     "prodCat": "Nike",
     "prodPrice": 85,
     "prodPic": "assets/images/jordan1retrohigh.jpg",
-    "prodLogo": "assets/images/nike.png"
+    "prodLogo": "assets/images/nike.png",
+    "qtyCart": 1
   },
   {
     "prodRef": "PM215",
@@ -87,7 +96,8 @@
     "prodCat": "Puma",
     "prodPrice": 115,
     "prodPic": "assets/images/pumaxnaturelsuedef.jpg",
-    "prodLogo": "assets/images/puma.png"
+    "prodLogo": "assets/images/puma.png",
+    "qtyCart": 1
   },
   {
     "prodRef": "PM100",
@@ -96,7 +106,8 @@
     "prodCat": "Puma",
     "prodPrice": 125,
     "prodPic": "assets/images/pumasuedeclassicbboyfabulous.jpg",
-    "prodLogo": "assets/images/puma.png"
+    "prodLogo": "assets/images/puma.png",
+    "qtyCart": 1
   },
   {
     "prodRef": "PM5291",
@@ -105,6 +116,7 @@
     "prodCat": "Puma",
     "prodPrice": 450,
     "prodPic": "assets/images/pumaxnaturelsuede.jpg",
-    "prodLogo": "assets/images/puma.png"
+    "prodLogo": "assets/images/puma.png",
+    "qtyCart": 1
   }
 ]

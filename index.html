@@ -9,53 +9,70 @@
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
+  <link rel="icon" href="assets/images/iconshoes.png">
   <title>ShoesAddicted</title>
   <link rel="stylesheet" href="assets/css/style.css" />
   <script src="assets/js/script.js"></script>
 </head>
 <body ng-app="shoesApp" ng-controller="shoesCtrl">
   <!-- Création de la navabar fixed top -->
- <nav class="navbar navbar-expand-md bg-dark navbar-dark fixed-top">
- <img id="ShoesAddictedIcon" src="assets/images/iconshoes.png" alt="logo" />
-   <a class="navbar-brand brandText" href="#"> ShoesAddicted </a>
-   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
-     <span class="navbar-toggler-icon"></span>
-   </button>
-   <div class="collapse navbar-collapse justify-content-start" id="collapsibleNavbar">
-     <ul class="navbar-nav mr-auto">
-       <!-- Création dropdown pour les produits -->
-       <li class="nav-item dropdown">
-         <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">LA BOUTIQUE</a>
-         <div class="dropdown-menu">
-           <a class="dropdown-item" id="navAll" href="#" ng-click="catFilter = ''">Toutes les marques</a>
-           <a class="dropdown-item" id="navAdidas" href="#" ng-click="catFilter = 'Adidas'">Adidas</a>
-           <a class="dropdown-item" id="navNike" href="#" ng-click="catFilter = 'Nike'">Nike</a>
-           <a class="dropdown-item" id="navPuma" href="#" ng-click="catFilter = 'Puma'">Puma</a>
-         </div>
-       </li>
-       <li class="nav-item">
-         <a class="nav-link" href="#weAre">Qui sommes nous ?</a>
-       </li>
-       <li class="nav-item">
-         <a class="nav-link" href="#contact">Nous contacter</a>
-       </li>
-     </ul>
-     <span class="navbar-text">
-       Le panier contient <span id="qty_cart">0</span> élément(s)
-     </span>
-     <a id="cart_btn" class="nav-link" href="#myModal" data-toggle="modal" data-target="#myModal"><i class="fas fa-shopping-basket"></i></a><!-- Panier ouvrant le modal -->
-   </div>
-</nav> <!-- fin de la navbar -->
+  <nav class="navbar navbar-expand-md bg-dark navbar-dark fixed-top">
+    <img id="ShoesAddictedIcon" src="assets/images/iconshoes.png" alt="logo" />
+    <a class="navbar-brand brandText" href="#"> ShoesAddicted </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse justify-content-start" id="collapsibleNavbar">
+      <ul class="navbar-nav mr-auto">
+        <!-- Création dropdown pour les produits -->
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">LA BOUTIQUE</a>
+          <div class="dropdown-menu">
+            <a class="dropdown-item" id="navAll" href="#" ng-click="catFilter = ''">Toutes les marques</a>
+            <a class="dropdown-item" id="navAdidas" href="#" ng-click="catFilter = 'Adidas'">Adidas</a>
+            <a class="dropdown-item" id="navNike" href="#" ng-click="catFilter = 'Nike'">Nike</a>
+            <a class="dropdown-item" id="navPuma" href="#" ng-click="catFilter = 'Puma'">Puma</a>
+          </div>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#weAre">Qui sommes nous ?</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#contact">Nous contacter</a>
+        </li>
+      </ul>
+      <span class="navbar-text">
+        Le panier contient <span id="qty_cart">0</span> élément(s)
+      </span>
+      <a id="cart_btn" class="nav-link" href="#myModal" data-toggle="modal" data-target="#myModal"><i class="fas fa-shopping-basket"></i></a><!-- Panier ouvrant le modal -->
+    </div>
+  </nav> <!-- fin de la navbar -->
+  <!--Class container pour le parallax-->
+  <div class="container parallax01 text-center align-middle"><!--début container entre image et nous-->
+    <span class="badge badge-light">SHOES me and NOT another</span>
+  </div>
+  <!--Fin container entre image et nous-->
+  <div class="container nous" id="weAre">
+    <h1>Qui sommes nous ?</h1>
+    <p>ShoesAddicted est tout simplement le site de référence de la sneakers</p>
+    <p>L'idée de base était de faire découvrir et vendre les plus beaux modèle de sneakers existant sur la boule bleu.</p>
+    <p>Conçu et développé par 3 amis passionés de la chaussure en tout genre, nous avons décidé de faire de notre passion un métier a part entière.</p>
+    <p>Après de nombreuses années à chercher les perles rares chacun de notre coté, nous avons décidé de mettre en commun nos connaissances pour chercher, trouver et vous vendres les sneakers les plus bankable de la planète sneakers.</p>
+    <p>Sur ShoesAddicted.com, vous trouverez les modèles de chaussures les plus prisés, à des prix incroyables!</p>
+    <p>Faites confiance à une équipe de passionés !</p>
+  </div><!-- Fin de la div class nous -->
+  <p id="shopName">La Boutique</p>
   <!--Ajout d'une card pour essayer de mettre du ng-repeat dessus-->
   <div class="container-fluid flexing">
-    <div ng-repeat="model in products | filter: {prodCat: catFilter}">
+    <div ng-repeat="model in products | filter: {prodCat: catFilter}" ng-grid>
       <div class="card">
         <span class="badge badge-light"><img src="{{model.prodLogo}}" alt="logo" /></span>
         <img class="card-img-top" src="{{model.prodPic}}" alt="{{model.prodName}}" />
         <div class="card-body">
           <p class="card-text">{{model.prodName}}</p>
-          <a href="#" data-toggle="popover" data-placement="top" title="Description du produit" data-content="{{model.prodDesc}}" data-trigger="focus">Description du produit</a>
-          <p>{{model.prodPrice}}€</p>
+          <p class="card-text ref">{{model.prodRef}}</p>
+          <a href="#" data-toggle="popover" data-placement="top" title="Description du produit" data-content="{{model.prodDesc}}" data-class="desc" data-trigger="focus">Description du produit</a>
+          <p>{{model.prodPrice | currency: 'EUR€'}}</p>
         </div>
       </div>
     </div>
