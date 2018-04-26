@@ -63,3 +63,7 @@ app.controller('shoesCtrl', ['$scope', '$http', function($scope, $http) {
 $(function (){ // Chargement du script quand le doc est chargé
   $('[data-toggle="popover"]').popover()
 })
+
+$('.nav-link').on('click',function() {
+  $('.navbar-collapse').collapse('hide');
+});
