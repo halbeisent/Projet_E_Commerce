@@ -5,6 +5,15 @@ body {
   background-color: #05121B;
 }
 
+/*Gestion des CARDS */
+.badge {
+  background-color: grey;
+}
+
+.container-fluid {
+  padding-top: 100px;
+}
+
 .card {
   width: 18em;
   text-align: center;
@@ -36,8 +45,7 @@ body {
 }
 
 
-/*Parallax*/
-
+/*Parallax*____________________________________________________________________________________/
 /* The image used */
 .parallax01{
   background-image: url('../images/bg_footwear.jpg');
@@ -47,23 +55,29 @@ body {
   font-size: 3em;
   color: white;
 
-  /* Create the parallax scrolling effect */
+/* Create the parallax scrolling effect */
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 }
 
-/* icone de la navbar */
+/* NAVBAR__________________________________________________________*/
 #ShoesAddictedIcon {
   width: 40px;
   padding-bottom: 20px;
 }
 
-.badge {
-  background-color: grey;
+/* CSS du MODAL ______________________________________________________*/
+
+.table {
+  font-size: 0.9em;
+  margin: auto;
+}
+.qty {
+  width: 4em;
 }
 
-.container-fluid {
-  padding-top: 100px;
+.trash {
+  display: inline;
 }

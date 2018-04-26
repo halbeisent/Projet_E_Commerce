@@ -3,6 +3,11 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <!-- Underscore.js pour gerer le cart -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.9.0/underscore-min.js"></script>
+  <!-- fontawesome -->
+  <script defer src="https://use.fontawesome.com/releases/v5.0.10/js/all.js" integrity="sha384-slN8GvtUJGnv6ca26v8EzVaR9DC58QEwsIk9q1QXdCU8Yu8ck/tL/5szYlBbqmS+" crossorigin="anonymous"></script>
+  <!-- BOOTSTRAP + ANGULARSJS-->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
   <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular-route.js"></script>
@@ -42,11 +47,70 @@
         </li>
       </ul>
       <span class="navbar-text">
-        Le panier contient <span id="qty_cart">0</span> élément(s)
+        Le panier contient <span class="badge badge-pill badge-light">{{totalQty()}}</span> élément(s)
       </span>
-      <a id="cart_btn" class="nav-link" href="#myModal" data-toggle="modal" data-target="#myModal"><i class="fas fa-shopping-basket"></i></a><!-- Panier ouvrant le modal -->
+      <a class="nav-link" href="#exampleModal" data-toggle="modal" data-target="#exampleModal"><i class="fas fa-shopping-basket"></i></a><!-- Panier ouvrant le modal -->
     </div>
   </nav> <!-- fin de la navbar -->
+
+  <!-- Modal -->
+  <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true"><!-- début div Modal -->
+    <div class="modal-dialog modal-lg" role="document"><!--début du modal-dialog-->
+      <div class="modal-content"><!--début du modal-content-->
+        <div class="modal-header"><!--début du modal-header-->
+          <h5 class="modal-title" id="exampleModalLabel">Mon panier</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div><!-- fin du modal-header-->
+        <div class="modal-body"><!--début du modal-body-->
+
+          <div class="container"><!-- début du div container -->
+            <div class="row"><!-- début du div row -->
+              <div class="col align-self-end"><!-- début du div col -->
+                  <div class="table-responsive-sm"><!-- New ! Div Table responsive -->
+                    <table class="table table-hover"><!-- début de table -->
+                      <thead class="thead-dark">
+                        <tr>
+                          <th class="text-left align-middle">Référence</th>
+                          <th class="text-left align-middle">Désignation</th>
+                          <th class="text-right align-middle">Quantité</th>
+                          <th class="text-right align-middle">Prix</th>
+                          <th class="text-right align-middle">Total</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <!-- Début du Tr a répéter via ng-repeat pour le CART-->
+                        <tr ng-repeat="model in cart">
+                          <td class="text-left align-middle">{{model.prodRef}}</td>
+                          <td class="text-left align-middle">{{model.prodName}}</td>
+                          <td class="text-right align-middle"><i ng-click="removeItem()" class="far fa-trash-alt trash"></i> <input type="number" ng-model="model.qtyCart" class="qty" min="0" max="99" /></td>
+                          <td class="text-right align-middle">{{model.prodPrice | currency : '€'}}</td>
+                          <td class="text-right align-middle">{{getCost(model) | currency : '€'}}</td>
+                        </tr>
+                        <!-- fin du Tr -->
+                        <tr>
+                          <td colspan ="3" class="text-right align-middle"></td>
+                          <td class="text-right align-middle">Total du panier</td>
+                          <td class="text-right align-middle">{{getTotal() | currency : '€'}}</td>
+                        </tr>
+                      </tbody>
+                    </table> <!-- fin de table -->
+                  </div><!-- fin de div table responsive -->
+              </div><!--Fin du div col -->
+            </div><!--Fin du div row -->
+          </div> <!-- Fin du div container fluid -->
+
+        </div><!--fin du modal-body-->
+        <div class="modal-footer"><!-- debut du modal-footer-->
+          <button type="button" class="btn btn-sm btn-secondary" data-dismiss="modal">Continuer</button>
+          <button type="button" class="btn btn-primary">Passer la commande</button>
+        </div><!-- fin du modal-footer-->
+      </div><!-- fin du modal-content-->
+    </div><!--fin du modal-dialog-->
+  </div><!-- fin div Modal -->
+  <!-- fin du Modal -->
+
   <!--Class container pour le parallax-->
   <div class="container parallax01 text-center align-middle"><!--début container entre image et nous-->
     <span class="badge badge-light">SHOES me and NOT another</span>
@@ -73,6 +137,9 @@
           <p class="card-text ref">{{model.prodRef}}</p>
           <a href="#" data-toggle="popover" data-placement="top" title="Description du produit" data-content="{{model.prodDesc}}" data-class="desc" data-trigger="focus">Description du produit</a>
           <p>{{model.prodPrice | currency: 'EUR€'}}</p>
+          <button ng-click="addItem(model)" type="button" class="btn btn-sm btn-primary" data-toggle="modal" data-target="#exampleModal">
+            Ajouter {{model.qtyCart}} au panier
+          </button>
         </div>
       </div>
     </div>
