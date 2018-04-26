@@ -10,12 +10,12 @@
     "qtyCart": 1
   },
   {
-    "prodRef": "NK690",
-    "prodName": "Nike Air Jordan 1 High Zip",
-    "prodDesc": "S'inspirant du modèle porté par la star lors de play-offs mythiques, suivant une grave blessure au pied, la chaussure Air Jordan 1 High Zip pour Femme associe des éléments de la Air Jordan I et de la Air Jordan II pour un confort d'exception et un style emblématique.",
+    "prodRef": "NK900",
+    "prodName": "Nike Jordan FlyKnit Elevation 23",
+    "prodDesc": "La chaussure Jordan Flyknit Elevation 23 pour Homme associe une empeigne premium en Flyknit à un amorti Air pour un confort dynamique.",
     "prodCat": "Nike",
-    "prodPrice": 75,
-    "prodPic": "assets/images/jordan1highzip.jpg",
+    "prodPrice": 160,
+    "prodPic": "assets/images/jordanelevation23.jpg",
     "prodLogo": "assets/images/nike.png",
     "qtyCart": 1
   },

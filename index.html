@@ -23,10 +23,10 @@
 </head>
 <body ng-app="shoesApp" ng-controller="shoesCtrl">
   <!-- Création de la navabar fixed top -->
-  <nav class="navbar navbar-expand-md bg-dark navbar-dark fixed-top">
+  <nav class="navbar navbar-expand-md bg-dark navbar-dark fixed-top" >
     <img id="ShoesAddictedIcon" src="assets/images/iconshoes.png" alt="logo" />
     <a class="navbar-brand brandText" href="#"> ShoesAddicted </a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar" aria-controls="collapsibleNavbar" aria-expanded="false">
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse justify-content-start" id="collapsibleNavbar">
@@ -43,9 +43,6 @@
         </li>
         <li class="nav-item">
           <a class="nav-link" href="#weAre">Qui sommes nous ?</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#contact">Nous contacter</a>
         </li>
       </ul>
       <span class="navbar-text">
@@ -151,7 +148,7 @@
   <div class="container parallax01 text-center align-middle"><!--début container entre image et nous--></div>
   <footer>
     <div class="container" id="payment">
-      <p class="paymentOptions"><img class="payLogos" src="assets/images/masterlogo.png"> <img class="payLogos" src="assets/images/visalogo.png"> <img class="payLogos" src="assets/images/paypallogo.png"> <img src="assets/images/bitcoinlogo.png"></p>
+      <p class="paymentOptions"><i class="fab fa-cc-mastercard payLogos"></i> <i class="fab fa-cc-visa payLogos"></i> <i class="fab fa-cc-paypal payLogos"></i> <i class="fab fa-bitcoin payLogos"></i></p>
       <p class="paymentOptions"> Copyright (c) 2018 Thibault Halbeisen, Jonathan Marandeau, Anousone Mounivongs All Rights Reserved.</p>
     </div>
   </footer>
