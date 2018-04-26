@@ -49,9 +49,8 @@
         </li>
       </ul>
       <span class="navbar-text">
-        Le panier contient <span class="badge badge-pill badge-light">{{totalQty()}}</span> élément(s)
+      <a class="nav-link" href="#exampleModal" data-toggle="modal" data-target="#exampleModal"><i class="fas fa-arrow-circle-right"></i> {{totalQty()}} Shoes <i class="fas fa-shopping-cart"></i></a><!-- Panier ouvrant le modal -->
       </span>
-      <a class="nav-link" href="#exampleModal" data-toggle="modal" data-target="#exampleModal"><i class="fas fa-shopping-basket"></i></a><!-- Panier ouvrant le modal -->
     </div>
   </nav> <!-- fin de la navbar -->
 
@@ -106,7 +105,7 @@
         </div><!--fin du modal-body-->
         <div class="modal-footer"><!-- debut du modal-footer-->
           <button type="button" class="btn btn-sm btn-secondary" data-dismiss="modal">Continuer</button>
-          <button type="button" class="btn btn-primary">PAIEMENT</button>
+          <button type="button" class="btn btn-smbtn-primary">PAIEMENT</button>
         </div><!-- fin du modal-footer-->
       </div><!-- fin du modal-content-->
     </div><!--fin du modal-dialog-->

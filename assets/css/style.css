@@ -9,6 +9,7 @@ body {
 .badge {
   background-color: grey;
 }
+
 /*Titre en gras dans les cards*/
 .prodName {
   font-weight: bold;

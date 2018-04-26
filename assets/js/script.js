@@ -24,6 +24,7 @@ app.controller('shoesCtrl', ['$scope', '$http', function($scope, $http) {
   $scope.getCost = function(model) {
     return model.qtyCart * model.prodPrice;
   };
+  
   // Utilisation de la fonction findItemById pour définir si présent dans le tableau, si présent = Qty + 1, sinon on push les donnée dans cart.
   $scope.addItem = function(itemToAdd) {
     var found = findItemById($scope.cart, itemToAdd.prodRef);
