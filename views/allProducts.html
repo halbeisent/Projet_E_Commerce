@@ -1,4 +1,4 @@
-<div ng-repeat="model in products">
+<div ng-repeat="model in products | filter: {prodCat: 'Adidas'}">
   <div class="card">
     <span class="badge badge-light"><img src="{{model.prodLogo}}" alt="logo" /></span>
     <img class="card-img-top" src="{{model.prodPic}}" alt="{{model.prodName}}" />
