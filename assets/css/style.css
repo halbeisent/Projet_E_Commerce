@@ -55,6 +55,26 @@ body {
   font-weight: bolder;
 }
 
+/*Footer*/
+#payment {
+  margin-top: 30px;
+}
+
+.paymentOptions{
+  font-size: 20px;
+  text-align: center;
+  color: #BBB0B4;
+}
+
+.payLogos {
+  height: 60px;
+  width: 90px;
+}
+
+.brandText {
+  font-family: 'Black Ops One', cursive;
+}
+
 
 /*Parallax*____________________________________________________________________________________/
 /* The image used */

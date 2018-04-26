@@ -14,6 +14,8 @@
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
+  <link href="https://fonts.googleapis.com/css?family=Pavanam" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Black+Ops+One" rel="stylesheet">
   <link rel="icon" href="assets/images/iconshoes.png">
   <title>ShoesAddicted</title>
   <link rel="stylesheet" href="assets/css/style.css" />
@@ -68,35 +70,35 @@
           <div class="container"><!-- début du div container -->
             <div class="row"><!-- début du div row -->
               <div class="col align-self-end"><!-- début du div col -->
-                  <div class="table-responsive-sm"><!-- New ! Div Table responsive -->
-                    <table class="table table-hover"><!-- début de table -->
-                      <thead class="thead-dark">
-                        <tr>
-                          <th class="text-left align-middle">Référence</th>
-                          <th class="text-left align-middle">Désignation</th>
-                          <th class="text-right align-middle">Quantité</th>
-                          <th class="text-right align-middle">Prix Unitaire</th>
-                          <th class="text-right align-middle">Total</th>
-                        </tr>
-                      </thead>
-                      <tbody>
-                        <!-- Début du Tr a répéter via ng-repeat pour le CART-->
-                        <tr ng-repeat="model in cart">
-                          <td class="text-left align-middle">{{model.prodRef}}</td>
-                          <td class="text-left align-middle">{{model.prodName}}</td>
-                          <td class="text-right align-middle"><i ng-click="removeItem(model)" class="far fa-trash-alt trash"></i> <input type="number" ng-model="model.qtyCart" class="qty" min="0" max="99" /></td>
-                          <td class="text-right align-middle">{{model.prodPrice | currency : '€'}}</td>
-                          <td class="text-right align-middle">{{getCost(model) | currency : '€'}}</td>
-                        </tr>
-                        <!-- fin du Tr -->
-                        <tr>
-                          <td colspan ="3" class="text-right align-middle"></td>
-                          <td class="text-right align-middle">Total du panier</td>
-                          <td class="text-right align-middle">{{getTotal() | currency : '€'}}</td>
-                        </tr>
-                      </tbody>
-                    </table> <!-- fin de table -->
-                  </div><!-- fin de div table responsive -->
+                <div class="table-responsive-sm"><!-- New ! Div Table responsive -->
+                  <table class="table table-hover"><!-- début de table -->
+                    <thead class="thead-dark">
+                      <tr>
+                        <th class="text-left align-middle">Référence</th>
+                        <th class="text-left align-middle">Désignation</th>
+                        <th class="text-right align-middle">Quantité</th>
+                        <th class="text-right align-middle">Prix Unitaire</th>
+                        <th class="text-right align-middle">Total</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <!-- Début du Tr a répéter via ng-repeat pour le CART-->
+                      <tr ng-repeat="model in cart">
+                        <td class="text-left align-middle">{{model.prodRef}}</td>
+                        <td class="text-left align-middle">{{model.prodName}}</td>
+                        <td class="text-right align-middle"><i ng-click="removeItem(model)" class="far fa-trash-alt trash"></i> <input type="number" ng-model="model.qtyCart" class="qty" min="0" max="99" /></td>
+                        <td class="text-right align-middle">{{model.prodPrice | currency : '€'}}</td>
+                        <td class="text-right align-middle">{{getCost(model) | currency : '€'}}</td>
+                      </tr>
+                      <!-- fin du Tr -->
+                      <tr>
+                        <td colspan ="3" class="text-right align-middle"></td>
+                        <td class="text-right align-middle">Total du panier</td>
+                        <td class="text-right align-middle">{{getTotal() | currency : '€'}}</td>
+                      </tr>
+                    </tbody>
+                  </table> <!-- fin de table -->
+                </div><!-- fin de div table responsive -->
               </div><!--Fin du div col -->
             </div><!--Fin du div row -->
           </div> <!-- Fin du div container fluid -->
@@ -125,7 +127,7 @@
     <p>Sur ShoesAddicted.com, vous trouverez les modèles de chaussures les plus prisés, à des prix incroyables!</p>
     <p>Faites confiance à une équipe de passionés !</p>
   </div><!-- Fin de la div class nous -->
-<div class="container parallax01 text-center align-middle"></div>
+  <div class="container parallax01 text-center align-middle"></div>
   <p id="shopName">La Boutique</p>
   <!--Ajout d'une card pour essayer de mettre du ng-repeat dessus-->
   <div class="container-fluid flexing">
@@ -146,5 +148,12 @@
     </div>
   </div>
   <!-- Fin de la card -->
+  <div class="container parallax01 text-center align-middle"><!--début container entre image et nous--></div>
+  <footer>
+    <div class="container" id="payment">
+      <p class="paymentOptions"><img class="payLogos" src="assets/images/masterlogo.png"> <img class="payLogos" src="assets/images/visalogo.png"> <img class="payLogos" src="assets/images/paypallogo.png"> <img src="assets/images/bitcoinlogo.png"></p>
+      <p class="paymentOptions"> Copyright (c) 2018 Thibault Halbeisen, Jonathan Marandeau, Anousone Mounivongs All Rights Reserved.</p>
+    </div>
+  </footer>
 </body>
 </html>
