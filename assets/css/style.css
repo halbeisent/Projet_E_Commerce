@@ -5,7 +5,7 @@ body {
   background-color: #05121B;
 }
 
-/*Gestion des CARDS */
+/*Gestion des CARDS ___________________________________________________________________________*/
 .badge {
   background-color: grey;
 }
@@ -57,7 +57,7 @@ body {
   font-weight: bolder;
 }
 
-/*Footer*/
+/*Footer___________________________________________________________________________*/
 #payment {
   margin-top: 30px;
 }
@@ -76,7 +76,6 @@ body {
   font-family: 'Black Ops One', cursive;
 }
 
-
 /*Parallax*____________________________________________________________________________________/
 /* The image used */
 .parallax01{
@@ -94,18 +93,18 @@ body {
   background-size: cover;
 }
 
-/* NAVBAR__________________________________________________________*/
+/* NAVBAR________________________________________________________________________*/
 #ShoesAddictedIcon {
   width: 40px;
   padding-bottom: 20px;
 }
 
-/* CSS du MODAL ______________________________________________________*/
-
+/* CSS du MODAL _______________________________________________________________________*/
 .table {
   font-size: 0.9em;
   margin: auto;
 }
+
 .qty {
   width: 4em;
 }
