@@ -62,7 +62,7 @@ body {
 }
 
 .paymentOptions{
-  font-size: 20px;
+  font-size: 0.9em;
   text-align: center;
   color: #BBB0B4;
 }
@@ -111,4 +111,31 @@ body {
 
 .trash {
   display: inline;
+}
+
+/*Footer de suivez nous*/
+.titleContact {
+  font-size: 4em;
+  text-align: center;
+  color: #BBB0B4;
+}
+
+.footUl{
+  text-align: center;
+  display: inline;
+}
+
+.footLi {
+  font-size: 2em;
+  color: #BBB0B4;
+  display: inline;
+  margin-left: 90px;
+}
+
+#payment {
+  margin-bottom: 50px;
+}
+
+.footUl a {
+  color: #BBB0B4;
 }
