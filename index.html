@@ -3,6 +3,8 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <!-- CSS de W3S -->
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
   <!-- Underscore.js pour gerer le cart -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.9.0/underscore-min.js"></script>
   <!-- fontawesome -->
@@ -21,7 +23,7 @@
   <script src="assets/js/script.js"></script>
 </head>
 <body ng-app="shoesApp" ng-controller="shoesCtrl">
-  <!-- Création de la navabar fixed top -->
+  <!-- Création de la navbar fixed top -->
   <nav class="navbar navbar-expand-md bg-dark navbar-dark fixed-top" >
     <img id="ShoesAddictedIcon" src="assets/images/iconshoes.png" alt="logo" />
     <a class="navbar-brand brandText" href="#"> ShoesAddicted </a>
@@ -48,7 +50,7 @@
         </li>
       </ul>
       <span class="navbar-text">
-      <a class="nav-link" href="#exampleModal" data-toggle="modal" data-target="#exampleModal"><i class="fas fa-arrow-circle-right"></i> {{totalQty()}} Shoes <i class="fas fa-shopping-cart"></i></a><!-- Panier ouvrant le modal -->
+        <a class="nav-link" href="#exampleModal" data-toggle="modal" data-target="#exampleModal"><i class="fas fa-arrow-circle-right"></i> {{totalQty()}} Shoes <i class="fas fa-shopping-cart"></i></a><!-- Panier ouvrant le modal -->
       </span>
     </div>
   </nav> <!-- fin de la navbar -->
@@ -113,24 +115,30 @@
 
   <!--Class container pour le parallax-->
   <div class="container parallax01 text-center align-middle"><!--début container entre image et nous-->
-    <span class="badge badge-light">SHOES me and NOT another</span>
+    <div class="w3-display-middle" style="white-space:nowrap;">
+      <span class="w3-center w3-padding-large w3-black w3-xlarge w3-wide w3-animate-opacity"><span class="w3-hide-small">CHOOSE</span> my SHOES</span>
+    </div>
   </div>
   <!--Fin container entre image et nous-->
   <div class="container nous" id="weAre">
     <h1>Qui sommes nous ?</h1>
     <p>ShoesAddicted est tout simplement le site de référence de la sneakers</p>
-    <p>L'idée de base était de faire découvrir et vendre les plus beaux modèle de sneakers existant sur la boule bleu.</p>
-    <p>Conçu et développé par 3 amis passionés de la chaussure en tout genre, nous avons décidé de faire de notre passion un métier a part entière.</p>
-    <p>Après de nombreuses années à chercher les perles rares chacun de notre coté, nous avons décidé de mettre en commun nos connaissances pour chercher, trouver et vous vendres les sneakers les plus bankable de la planète sneakers.</p>
-    <p>Sur ShoesAddicted.com, vous trouverez les modèles de chaussures les plus prisés, à des prix incroyables!</p>
-    <p>Faites confiance à une équipe de passionés !</p>
+    <p>L'idée de base était de faire découvrir et vendre les plus beaux modèle de sneakers existants sur la boule bleu.</p>
+    <p>Conçu et développé par 3 amis passionnés de la chaussure en tout genre, nous avons décidé de faire de notre passion un métier à part entière.</p>
+    <p>Après de nombreuses années à chercher les perles rares chacun de notre coté, nous avons décidé de mettre en commun nos connaissances pour chercher, trouver et vous vendre les sneakers les plus "bankable" de la planète sneakers.</p>
+    <p>Sur notre <strong>site</strong>, vous trouverez les modèles de chaussures les plus prisés, à des prix incroyables!</p>
+    <p><strong>Faites confiance à une équipe de passionnés !</strong></p>
   </div><!-- Fin de la div class nous -->
+
+  <!-- div de transition -->
   <div class="container parallax01 text-center align-middle"></div>
-  <p id="shopName">La Boutique</p>
-  <!--Ajout d'une card pour essayer de mettre du ng-repeat dessus-->
+
+  <div class="container-fluid text-center align-middle" id="shopName"><p>La Boutique</p></div>
+
   <div class="container-fluid flexing">
-    <div ng-repeat="model in products | filter: {prodCat: catFilter}" ng-grid>
-      <div class="card">
+    <div ng-repeat="model in products | filter: {prodCat: catFilter}" ng-grid><!-- début de div ng-repeat pour conserver proportion -->
+      <!--Card avec ng-repeat dessus-->
+      <div class="card"><!-- debut div card-->
         <span class="badge badge-light"><img src="{{model.prodLogo}}" alt="logo" /></span>
         <img class="card-img-top" src="{{model.prodPic}}" alt="{{model.prodName}}" />
         <div class="card-body">
@@ -142,11 +150,14 @@
             Ajouter au panier
           </button>
         </div>
-      </div>
-    </div>
+      </div><!-- fin div card-->
+      <!-- Fin de la card -->
+    </div><!-- fin de div ng-repeat-->
   </div>
-  <!-- Fin de la card -->
-  <div class="container parallax01 text-center align-middle"><!--début container entre image et nous--></div>
+
+  <!-- div de transition -->
+  <div class="container parallax01 text-center align-middle"></div>
+
   <footer>
     <div class="container" id="payment">
       <p class="titleContact"><strong>Suivez-nous</strong></p>
@@ -162,5 +173,6 @@
       <p class="paymentOptions"> Copyright (c) 2018 Thibault Halbeisen, Jonathan Marandeau, Anousone Mounivongs All Rights Reserved.</p>
     </div>
   </footer>
+
 </body>
 </html>
