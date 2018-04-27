@@ -120,16 +120,12 @@ body {
   color: #BBB0B4;
 }
 
-.footUl{
-  text-align: center;
-  display: inline;
-}
-
 .footLi {
   font-size: 2em;
   color: #BBB0B4;
-  display: inline;
-  margin-left: 90px;
+  margin: 12px;
+  text-align: center;
+  list-style: none;
 }
 
 #payment {
